@@ -23,3 +23,8 @@ for i in 0..<30 {
     }
 }
 
+
+
+// ! if an optional comes up, the progra will crash
+// ?? "" safer way, so that when there is a null value, it puts "" instead
+
