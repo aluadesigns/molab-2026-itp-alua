@@ -1,4 +1,4 @@
-var text = ["*"]
+var text = "*"
 let spaces = Int.random(in: 0...4)
 
 switch spaces {
@@ -15,13 +15,18 @@ default :
 }
 
 for i in 0..<30 {
-    if i%2 == 0 {
-        print("\(text.randomElement()!) \(text.randomElement()!) \(text.randomElement()!) \(text.randomElement()!) \(text.randomElement()!) \(text.randomElement()!)")
-    }
-    else {
-        print("\(text.randomElement()!) \(text.randomElement()!) \(text.randomElement()!) \(text.randomElement()!) \(text.randomElement()!) \(text.randomElement()!)")
+    //    if i%2 == 0 {
+    //        print("\(text.randomElement()!) \(text.randomElement()!) \(text.randomElement()!) \(text.randomElement()!) \(text.randomElement()!) \(text.randomElement()!)")
+    //    }
+    //    else {
+    //        print("\(text.randomElement()!) \(text.randomElement()!) \(text.randomElement()!) \(text.randomElement()!) \(text.randomElement()!) \(text.randomElement()!)")
+    //    }
+    
+    for _ in 0..<10 {
+        
     }
 }
+
 
 
 
