@@ -1,13 +1,13 @@
 import UIKit
 
 
-let sz = CGSize(width: 500, height: 500)
+let sz = CGSize(width: 1000, height: 500)
 let renderer = UIGraphicsImageRenderer(size: sz)
 
 @MainActor //don't know what this is!
 func yourImage(amount: Int) -> UIImage {
     
-    let image = renderer.image { context in
+    let image = renderer.image { x in
         
     var ypos: Int = 0
     for _ in 0..<amount {
@@ -15,7 +15,7 @@ func yourImage(amount: Int) -> UIImage {
         var colors: [UIColor] = [ .green, .blue, .yellow, .purple, .white, .cyan]
         var color = colors.randomElement()!
         color.setFill()
-        context.fill(CGRect(x: 0, y: ypos, width: 700, height: 10))
+        x.fill(CGRect(x: 0, y: ypos, width: 700, height: ypos))
             
         }
        
@@ -24,5 +24,6 @@ func yourImage(amount: Int) -> UIImage {
     return image
 }
 
-yourImage(amount: 50)
+yourImage(amount: 520)
+
 
